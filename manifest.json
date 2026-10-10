@@ -4,6 +4,7 @@
   "name": "Session References",
   "version": "0.2.0",
   "description": "Reference and search conversations in the current project.",
+  "engines": { "piDesktop": ">=0.18.0-beta.2" },
   "i18n": { "zh-CN": { "name": "会话引用", "description": "引用和搜索当前项目的其他会话。" } },
   "main": "main.js",
   "renderer": "renderer.mjs",
