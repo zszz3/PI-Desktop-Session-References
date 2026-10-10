@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "pi.session-references",
+  "name": "Session References",
+  "version": "0.2.0",
+  "description": "Reference and search conversations in the current project.",
+  "i18n": { "zh-CN": { "name": "会话引用", "description": "引用和搜索当前项目的其他会话。" } },
+  "main": "main.js",
+  "renderer": "renderer.mjs",
+  "rendererActions": ["session.search"],
+  "contributes": {
+    "mcpServers": [{ "id": "session-references", "label": "Session References", "transport": "builtin", "builtin": "session-references" }]
+  },
+  "permissions": ["renderer.extension", "session.read.project"],
+  "activationEvents": ["onStartup"]
+}
